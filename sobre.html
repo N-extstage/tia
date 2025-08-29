@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Flora Assessoria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Header/Navbar -->
+  <header class="bg-black px-6 py-4 shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between flex-wrap">
+      <!-- Logo -->
+      <div class="flex items-center gap-4">
+        <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.8] object-contain">
+      </div>
+
+      <!-- Menu desktop -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-red-600 font-bold">Início</a>
+        <a href="servicos.html" class="text-white hover:text-red-600 font-medium transition">Serviços</a>
+        <a href="sobre.html" class="text-white hover:text-red-600 font-medium transition">A Flora</a>
+        <a href="contato.html" class="text-white hover:text-red-600 font-medium transition">Contato</a>
+      </nav>
+
+      <!-- Botão mobile -->
+      <button onclick="toggleMenu()" class="md:hidden text-white">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <!-- Menu mobile -->
+      <nav id="mobile-menu" class="hidden w-full mt-4 md:hidden flex flex-col space-y-4">
+        <a href="index.html" class="text-red-600 font-bold">Início</a>
+        <a href="servicos.html" class="text-black hover:text-red-600 font-medium">Serviços</a>
+        <a href="sobre.html" class="text-black hover:text-red-600 font-medium">A Flora</a>
+        <a href="contato.html" class="text-black hover:text-red-600 font-medium">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Sobre -->
+  <section class="pt-32 pb-20 px-4 bg-white">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:gap-10">
+      
+      <!-- Imagens em triângulo -->
+      <div class="lg:w-1/2 flex flex-col items-center gap-4">
+        <div>
+          <img src="IMAGENS/Escritorio flora.jpeg" alt="Equipe Flora 1"
+               class="w-60 h-60 rounded-full object-cover shadow-lg border-[2px] border-gray-300 hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex gap-6 flex-wrap justify-center">
+          <img src="IMAGENS/FLORA2.jpeg" alt="Equipe Flora 2"
+               class="w-60 h-60 rounded-full object-cover shadow-lg border-[2px] border-gray-300 hover:scale-105 transition-transform duration-300">
+          <img src="IMAGENS/FLORA3.jpeg" alt="Equipe Flora 3"
+               class="w-60 h-60 rounded-full object-cover shadow-lg border-[2px] border-gray-300 hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="lg:w-1/2 text-left lg:pl-6 mt-28">
+        <h2 class="text-3xl font-bold mb-6 logo-text">Sobre a <span class="gold-text">Flora</span></h2>
+        <div class="w-20 h-1 bg-red-600 mb-6"></div>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+          A Flora é uma assessoria criada exclusivamente para atender às demandas da área educacional. Contamos com uma equipe formada por profissionais com mais de 20 anos de experiência na rede pública de ensino.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+          Atuamos de forma personalizada na gestão organizacional, identificando e criando soluções para questões pedagógicas e administrativas.
+        </p>
+        <a href="contato.html"
+           class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg shadow transition">
+          Fale com um especialista
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contato</h3>
+      <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
+      <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
+      <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
+      <p class="mb-2">📞 11 4102-7903</p>
+      <p class="mb-4">✉️ info@floraassessoria.com.br</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Onde atuamos</h3>
+        <div class="flex flex-wrap gap-4">
+          <img src="IMAGENS/DESTAQUE 1.jpeg" alt="Destaque 1" class="w-20 h-20 object-cover rounded-lg shadow-md">
+          <img src="IMAGENS/DESTAQUE 2.jpeg" alt="Destaque 2" class="w-20 h-20 object-cover rounded-lg shadow-md">
+          <img src="IMAGENS/DESTAQUE 3.jpeg" alt="Destaque 3" class="w-20 h-20 object-cover rounded-lg shadow-md">
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <h4 class="text-lg font-semibold mb-4">Acompanhe a Flora</h4>
+      <div class="flex justify-center gap-6 text-2xl">
+        <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+            <i class="fab fa-facebook-f"></i>
+        <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+            <i class="fab fa-instagram"></i>
+        <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+            <i class="fab fa-whatsapp"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+
+<!-- Avaliação -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://forms.gle/7ytZTzX9LTGYwG5b7" target="_blank"
+     class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fas fa-star text-xl"></i>
+    <span class="font-semibold">Avalie a Flora</span>
+  </a>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Flora Assessoria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+    function enviarWhatsApp(event) {
+      event.preventDefault();
+      const msg = document.getElementById('mensagem').value;
+      const numero = "5511965382338";
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Navbar -->
+  <header class="bg-black px-6 py-4 shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between">
+      <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.8] object-contain">
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-white hover:text-red-600 font-medium">Início</a>
+        <a href="servicos.html" class="text-white hover:text-red-600 font-medium">Serviços</a>
+        <a href="sobre.html" class="text-white hover:text-red-600 font-medium">A Flora</a>
+        <a href="contato.html" class="text-red-600 font-bold">Contato</a>
+      </nav>
+      <button onclick="toggleMenu()" class="md:hidden text-white">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-black px-6 py-4 space-y-4">
+      <a href="index.html" class="block text-white hover:text-red-600">Início</a>
+      <a href="servicos.html" class="block text-white hover:text-red-600">Serviços</a>
+      <a href="sobre.html" class="block text-white hover:text-red-600">A Flora</a>
+      <a href="contato.html" class="block text-red-600 font-bold">Contato</a>
+    </div>
+  </header>
+
+  <!-- Seção de Contato -->
+  <section class="pt-32 pb-20 bg-white px-4">
+    <div class="container mx-auto flex flex-col lg:flex-row gap-10">
+      
+      <!-- Informações -->
+      <div class="lg:w-1/2 space-y-6">
+        <h2 class="text-4xl font-bold logo-text">Entre em <span class="gold-text">Contato</span></h2>
+        <div class="w-20 h-1 bg-red-600"></div>
+        <p class="text-gray-600">Pronto para transformar sua visão em realidade? Agende uma consulta inicial gratuita.</p>
+        <ul class="space-y-6">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-red-600 text-xl mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-bold mb-1">Endereço</h4>
+              <p class="text-gray-600">R. Décio Ângelo Chiuvitti, 33 - SALA 5 - São Paulo/SP</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-phone-alt text-red-600 text-xl mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-bold mb-1">Telefone</h4>
+              <p class="text-gray-600">(11) 4102-7903</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope text-red-600 text-xl mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-bold mb-1">Email</h4>
+              <p class="text-gray-600">info@floraassessoria.com.br</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-clock text-red-600 text-xl mr-4 mt-1"></i>
+            <div>
+              <h4 class="font-bold mb-1">Horário</h4>
+              <p class="text-gray-600">Segunda a Sexta: 9h às 18h</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Redes Sociais -->
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fab fa-instagram"></i>
+          <a href="https://wa.me/5511914825896" target="_blank" class="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Simulação de Celular -->
+      <div class="lg:w-1/2 flex justify-center items-center">
+        <div class="relative w-[300px] h-[600px] overflow-hidden z-10">
+          <img src="IMAGENS/TELEFONE.jpg" alt="Celular WhatsApp" class="absolute inset-0 w-full h-full object-contain z-0">
+          <div class="absolute top-[80px] left-[20px] right-[20px] bottom-[100px] bg-[#e5ddd5] rounded-lg p-3 overflow-y-auto z-10 space-y-3 shadow-inner">
+            <div class="bg-white rounded-xl px-3 py-2 max-w-[80%] self-start shadow">
+              <p class="text-xs text-gray-800">Olá! Gostaria de saber mais sobre os serviços da Flora 😊</p>
+            </div>
+            <div class="bg-[#dcf8c6] rounded-xl px-3 py-2 max-w-[80%] self-end ml-auto shadow">
+              <p class="text-xs text-gray-800">Oi! Claro! Me conta mais sobre o que você precisa 🌿</p>
+            </div>
+          </div>
+          <div class="absolute bottom-[20px] left-[20px] right-[20px] z-10">
+            <form onsubmit="enviarWhatsApp(event)" class="flex gap-2">
+              <input type="text" id="mensagem" placeholder="Digite sua mensagem" required
+                     class="flex-1 px-3 py-2 text-xs border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              <button type="submit" class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded-md text-xs font-semibold">
+                <i class="fab fa-whatsapp"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="w-full bg-gray-900 text-white py-12 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contato</h3>
+      <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
+      <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
+      <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
+      <p class="mb-2">📞 11 4102-7903</p>
+      <p class="mb-4">✉️ info@floraassessoria.com.br</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Sobre a Flora</h3>
+        <p class="mb-4 text-gray-300">
+          A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+            <i class="fab fa-instagram"></i>
+          <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center text-sm text-gray-400">
+      &copy; 2025 Flora Assessoria. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Avaliação -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://forms.gle/7ytZTzX9LTGYwG5b7" target="_blank"
+     class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fas fa-star text-xl"></i>
+    <span class="font-semibold">Avalie a Flora</span>
+  </a>
+</div>
+
+
+</body>
+</html>

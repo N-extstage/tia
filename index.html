@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora - Assessoria de Planejamento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black">
+  <!-- ...cabeçalho permanece igual... -->
+
+<!-- Navbar -->
+<header class="bg-black px-6 py-4 shadow-md fixed top-0 w-full z-50">
+  <div class="container mx-auto flex items-center justify-between flex-wrap">
+    <!-- Logo -->
+    <div class="flex items-center gap-4">
+      <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.8] object-contain">
+    </div>
+
+    <!-- Menu desktop -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-red-600 font-bold">Início</a>
+      <a href="servicos.html" class="text-white hover:text-red-600 font-medium transition">Serviços</a>
+      <a href="sobre.html" class="text-white hover:text-red-600 font-medium transition">A Flora</a>
+      <a href="contato.html" class="text-white hover:text-red-600 font-medium transition">Contato</a>
+    </nav>
+
+    <!-- Botão mobile -->
+    <button onclick="toggleMenu()" class="md:hidden text-white">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="hidden w-full mt-4 md:hidden flex flex-col space-y-4">
+      <a href="index.html" class="text-red-600 font-bold">Início</a>
+      <a href="servicos.html" class="text-black hover:text-red-600 font-medium">Serviços</a>
+      <a href="sobre.html" class="text-black hover:text-red-600 font-medium">A Flora</a>
+      <a href="contato.html" class="text-black hover:text-red-600 font-medium">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative h-[70vh] bg-cover bg-center text-white mt-[80px]"
+         style="background-image: url('IMAGENS/TELA INICIO.png');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="absolute bottom-10 left-6 md:left-20 z-10 max-w-xl text-left" style="font-family: 'Montserrat', sans-serif;">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 logo-text">Assessores especializados no seu segmento</h1>
+    <p class="text-base md:text-xl mb-6">Chega de atrasos e problemas na sua prestação de contas.</p>
+    <a href="contato.html"
+       class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 inline-block">
+      Solicite uma consultoria gratuita
+    </a>
+  </div>
+</section>
+
+<!-- Seção de Bolhas -->
+<section class="bg-white py-20 px-6">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-10 logo-text">Veja onde podemos atuar na sua escola:</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
+      <!-- Bolha 1 -->
+      <div class="group transition transform hover:-translate-y-2 duration-300">
+        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+          <img src="IMAGENS/Rede Parceira.jpeg" alt="Rede Parceira" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-5 text-lg font-semibold text-gray-800">Rede Parceira</p>
+      </div>
+      <!-- Bolha 2 -->
+      <div class="group transition transform hover:-translate-y-2 duration-300">
+        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+          <img src="IMAGENS/APM.jpeg" alt="APM" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-5 text-lg font-semibold text-gray-800">APM</p>
+      </div>
+      <!-- Bolha 3 -->
+      <div class="group transition transform hover:-translate-y-2 duration-300">
+        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+          <img src="IMAGENS/Pedagogico.jpeg" alt="Pedagógico" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-5 text-lg font-semibold text-gray-800">Pedagógico</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-xl font-bold mb-4">Contato</h3>
+      <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
+      <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
+      <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
+      <p class="mb-2">📞 11 4102-7903</p>
+      <p class="mb-4">✉️ info@floraassessoria.com.br</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">Onde atuamos</h3>
+      <div class="flex flex-wrap gap-4">
+        <img src="IMAGENS/DESTAQUE 1.jpeg" alt="Destaque 1" class="w-20 h-20 object-cover rounded-lg shadow-md">
+        <img src="IMAGENS/DESTAQUE 2.jpeg" alt="Destaque 2" class="w-20 h-20 object-cover rounded-lg shadow-md">
+        <img src="IMAGENS/DESTAQUE 3.jpeg" alt="Destaque 3" class="w-20 h-20 object-cover rounded-lg shadow-md">
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center">
+    <h4 class="text-lg font-semibold mb-4">Acompanhe a Flora</h4>
+    <div class="flex justify-center gap-6 text-2xl">
+      <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+            <i class="fab fa-facebook-f"></i>
+      <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+            <i class="fab fa-instagram"></i>
+      <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+            <i class="fab fa-whatsapp"></i>
+    </div>
+  </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+<script>
+  function toggleMenu() {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  }
+</script>
+
+
+<!-- Avaliação -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://forms.gle/7ytZTzX9LTGYwG5b7" target="_blank"
+     class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fas fa-star text-xl"></i>
+    <span class="font-semibold">Avalie a Flora</span>
+  </a>
+</div>
+  
+</body>
+</html>
