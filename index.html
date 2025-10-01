@@ -57,81 +57,244 @@
   </div>
 </section>
 
-<!-- Seção de Bolhas -->
-<section class="bg-white py-20 px-6">
+<!-- Seção de Bolhas (substitua a sua atual por esta) -->
+<section class="bg-white py-16 px-4">
   <div class="container mx-auto text-center">
     <h2 class="text-2xl font-bold mb-10 logo-text">Veja onde podemos atuar na sua escola:</h2>
-    <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
-      <!-- Bolha 1 -->
-      <div class="group transition transform hover:-translate-y-2 duration-300">
-        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card (repita / ajuste conteúdo para cada item) -->
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+        <!-- Bolha (também atua como botão para mobile) -->
+        <div tabindex="0" role="button" aria-expanded="false"
+             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/Rede Parceira.jpeg" alt="Rede Parceira" class="w-full h-full object-cover">
         </div>
-        <p class="mt-5 text-lg font-semibold text-gray-800">Rede Parceira</p>
+
+        <p class="text-base font-semibold text-gray-800 mb-2">Rede Parceira</p>
+
+        <!-- OVERLAY: absoluto (fora do fluxo) - não altera a altura do grid -->
+        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+                    transition-all duration-300 z-10">
+          <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
+            Nossa assessoria pedagógica acompanha e orienta na realização de projetos didáticos, acompanhamento das aprendizagens e gerenciamento dos recursos materiais.
+          </div>
+        </div>
       </div>
-      <!-- Bolha 2 -->
-      <div class="group transition transform hover:-translate-y-2 duration-300">
-        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+
+      <!-- Card 2 -->
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+        <div tabindex="0" role="button" aria-expanded="false"
+             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/APM.jpeg" alt="APM" class="w-full h-full object-cover">
         </div>
-        <p class="mt-5 text-lg font-semibold text-gray-800">APM</p>
+        <p class="text-base font-semibold text-gray-800 mb-2">APM</p>
+        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+                    transition-all duration-300 z-10">
+          <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
+            A Associação de Pais e Mestres tem sua constituição bienal; auxiliamos na implementação, constituição e registro em cartório.
+          </div>
+        </div>
       </div>
-      <!-- Bolha 3 -->
-      <div class="group transition transform hover:-translate-y-2 duration-300">
-        <div class="w-40 md:w-48 h-40 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-red-600 mx-auto">
+
+      <!-- Card 3 -->
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+        <div tabindex="0" role="button" aria-expanded="false"
+             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/Pedagogico.jpeg" alt="Pedagógico" class="w-full h-full object-cover">
         </div>
-        <p class="mt-5 text-lg font-semibold text-gray-800">Pedagógico</p>
+        <p class="text-base font-semibold text-gray-800 mb-2">Pedagógico</p>
+        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+                    transition-all duration-300 z-10">
+          <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
+            Atuamos nos eixos: gestão de recursos, gestão de pessoas e gestão pedagógica.
+          </div>
+        </div>
       </div>
+
+      <!-- Card 4 -->
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+        <div tabindex="0" role="button" aria-expanded="false"
+             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
+          <img src="IMAGENS/SIGEP - Copia.jpeg" alt="SIGEP" class="w-full h-full object-cover">
+        </div>
+        <p class="text-base font-semibold text-gray-800 mb-2">SIGEP</p>
+        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+                    transition-all duration-300 z-10">
+          <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left space-y-1">
+            <p>Somos especialistas em prestação de contas, garantindo transparência e excelência 🤗</p>
+            <p>✅ Assessoria completa ao SIGEP</p>
+            <p>✅ Folha de Pagamento, Décimo, Férias, Prêmios.</p>
+            <p>✅ Certidões: CND/INSS, CTM, CNDT, FGTS-CRF, CADIN municipal. Lei 14.132/2006.</p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
     </div>
   </div>
 </section>
 
+
+
+
+
+
+
+
+      <!-- Blocos de clientes -->
+      <section class="bg-white py-16 px-6">
+  <div class="container mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold mb-10 logo-text">NOSSOS CLIENTES</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Bloco 1 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
+        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">APM - EMEF</h3>
+          <ul class="list-disc list-inside text-gray-800 space-y-1">
+            <li>Hélio Tavares, DR.</li>
+            <li>Madre Maria Imilda do Santíssimo Sacramento</li>
+            <li>Marisa Moretti Câmara, Prof.ª</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bloco 2 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
+        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">APM - EMEI</h3>
+          <ul class="list-disc list-inside text-gray-800 space-y-1">
+            <li>Epitácio Pessoa</li>
+            <li>J.G. de Araújo Jorge</li>
+            <li>Laura de Conceição Pereira Quintas, Prof.ª</li>
+            <li>Louren Rosa</li>
+            <li>Maria Lopes Oliveira, Prof.ª</li>
+            <li>Marisa Lopes Pinheiro, Prof.ª</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bloco 3 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
+        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">Rede Parceira</h3>
+          <ul class="list-disc list-inside text-gray-800 space-y-1">
+            <li>Colégio São Lucas</li>
+            <li>Instituto Educacional Vida</li>
+            <li>Escola Criativa</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bloco 4 -->
+      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
+        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">Consultoria Pedagógica</h3>
+          <ul class="list-disc list-inside text-gray-800 space-y-1">
+            <li>Planejamento estratégico</li>
+            <li>Formação continuada</li>
+            <li>Gestão de aprendizagem</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
 <!-- Rodapé -->
-<footer class="bg-gray-900 text-white py-12 px-6">
-  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-    <div>
-      <h3 class="text-xl font-bold mb-4">Contato</h3>
+  <footer class="w-full bg-gray-900 text-white py-12 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contato</h3>
       <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
       <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
       <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
       <p class="mb-2">📞 11 4102-7903</p>
       <p class="mb-4">✉️ info@floraassessoria.com.br</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-bold mb-4">Onde atuamos</h3>
-      <div class="flex flex-wrap gap-4">
-        <img src="IMAGENS/DESTAQUE 1.jpeg" alt="Destaque 1" class="w-20 h-20 object-cover rounded-lg shadow-md">
-        <img src="IMAGENS/DESTAQUE 2.jpeg" alt="Destaque 2" class="w-20 h-20 object-cover rounded-lg shadow-md">
-        <img src="IMAGENS/DESTAQUE 3.jpeg" alt="Destaque 3" class="w-20 h-20 object-cover rounded-lg shadow-md">
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Sobre a Flora</h3>
+        <p class="mb-4 text-gray-300">
+          A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+            <i class="fab fa-instagram"></i>
+          <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="mt-10 text-center">
-    <h4 class="text-lg font-semibold mb-4">Acompanhe a Flora</h4>
-    <div class="flex justify-center gap-6 text-2xl">
-      <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
-            <i class="fab fa-facebook-f"></i>
-      <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
-            <i class="fab fa-instagram"></i>
-      <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
-            <i class="fab fa-whatsapp"></i>
+    <div class="mt-12 text-center text-sm text-gray-400">
+      &copy; 2025 Flora Assessoria. Todos os direitos reservados.
     </div>
-  </div>
-</footer>
+  </footer>
 
 <script src="js/scripts.js"></script>
 <script>
   function toggleMenu() {
     document.getElementById("mobile-menu").classList.toggle("hidden");
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const clientes = document.querySelectorAll(".cliente");
+
+  clientes.forEach((cliente) => {
+    cliente.addEventListener("mouseenter", () => {
+      // Oculta todos os conteúdos
+      clientes.forEach((c) => {
+        const conteudo = c.querySelector(".conteudo");
+        if (conteudo) conteudo.classList.add("hidden");
+      });
+
+      // Exibe o conteúdo da bolha atual
+      const atual = cliente.querySelector(".conteudo");
+      if (atual) atual.classList.remove("hidden");
+    });
+
+    cliente.addEventListener("mouseleave", () => {
+      const atual = cliente.querySelector(".conteudo");
+      if (atual) atual.classList.add("hidden");
+    });
+  });
+});
+
+
 </script>
 
 
 <!-- Avaliação -->
 <div class="fixed bottom-6 right-6 z-50">
-  <a href="https://forms.gle/7ytZTzX9LTGYwG5b7" target="_blank"
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-W7Q7Z6X-gN26LmfqZH1Mu6nL8zM6GXjn0gt68iiB4ACBzg/viewform?pli=1" target="_blank"
      class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
     <i class="fas fa-star text-xl"></i>
     <span class="font-semibold">Avalie a Flora</span>

@@ -160,12 +160,26 @@
 
   <!-- Avaliação -->
 <div class="fixed bottom-6 right-6 z-50">
-  <a href="https://forms.gle/7ytZTzX9LTGYwG5b7" target="_blank"
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-W7Q7Z6X-gN26LmfqZH1Mu6nL8zM6GXjn0gt68iiB4ACBzg/viewform?pli=1" target="_blank"
      class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
     <i class="fas fa-star text-xl"></i>
     <span class="font-semibold">Avalie a Flora</span>
   </a>
 </div>
+
+<script>
+  function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    const mensagem = document.getElementById("mensagem").value.trim();
+    const numero = "5511914825896"; // Substitua por seu número com DDD e código do país
+
+    if (mensagem !== "") {
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, "_blank");
+    }
+  }
+</script>
 
 
 </body>
