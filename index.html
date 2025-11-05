@@ -10,18 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white text-black">
-  <!-- ...cabeçalho permanece igual... -->
 
 <!-- Navbar -->
-<header class="bg-black px-6 py-4 shadow-md fixed top-0 w-full z-50">
+<header class="bg-black px-4 py-3 shadow-md fixed top-0 w-full z-50">
   <div class="container mx-auto flex items-center justify-between flex-wrap">
     <!-- Logo -->
-    <div class="flex items-center gap-4">
-      <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.8] object-contain">
+    <div class="flex items-center gap-3">
+      <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.5] object-contain">
     </div>
 
     <!-- Menu desktop -->
-    <nav class="hidden md:flex space-x-8">
+    <nav class="hidden md:flex space-x-6">
       <a href="index.html" class="text-red-600 font-bold">Início</a>
       <a href="servicos.html" class="text-white hover:text-red-600 font-medium transition">Serviços</a>
       <a href="sobre.html" class="text-white hover:text-red-600 font-medium transition">A Flora</a>
@@ -34,7 +33,7 @@
     </button>
 
     <!-- Menu mobile -->
-    <nav id="mobile-menu" class="hidden w-full mt-4 md:hidden flex flex-col space-y-4">
+    <nav id="mobile-menu" class="hidden w-full mt-3 md:hidden flex flex-col space-y-3">
       <a href="index.html" class="text-red-600 font-bold">Início</a>
       <a href="servicos.html" class="text-black hover:text-red-600 font-medium">Serviços</a>
       <a href="sobre.html" class="text-black hover:text-red-600 font-medium">A Flora</a>
@@ -44,39 +43,34 @@
 </header>
 
 <!-- Hero Section -->
-<section class="relative h-[70vh] bg-cover bg-center text-white mt-[80px]"
+<section class="relative h-[55vh] bg-cover bg-center text-white mt-[80px]"
          style="background-image: url('IMAGENS/TELA INICIO.png');">
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-  <div class="absolute bottom-10 left-6 md:left-20 z-10 max-w-xl text-left" style="font-family: 'Montserrat', sans-serif;">
-    <h1 class="text-3xl md:text-5xl font-bold mb-4 logo-text">Assessores especializados no seu segmento</h1>
-    <p class="text-base md:text-xl mb-6">Chega de atrasos e problemas na sua prestação de contas.</p>
+  <div class="absolute bottom-8 left-4 md:left-16 z-10 max-w-xl text-left" style="font-family: 'Montserrat', sans-serif;">
+    <h1 class="text-3xl md:text-5xl font-bold mb-3 logo-text">Assessoria especializada na Rede Municipal de Educação</h1>
+    <p class="text-base md:text-lg mb-4">Chega de atrasos e problemas na sua prestação de contas.</p>
     <a href="contato.html"
-       class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 inline-block">
+       class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-lg shadow-lg transition duration-300 inline-block">
       Solicite uma consultoria gratuita
     </a>
   </div>
 </section>
 
-<!-- Seção de Bolhas (substitua a sua atual por esta) -->
-<section class="bg-white py-16 px-4">
+<!-- Seção de Bolhas -->
+<section class="bg-white py-12 px-4">
   <div class="container mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-10 logo-text">Veja onde podemos atuar na sua escola:</h2>
+    <h2 class="text-2xl font-bold mb-6 logo-text">Veja onde podemos atuar na sua escola:</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- Card (repita / ajuste conteúdo para cada item) -->
-      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
-        <!-- Bolha (também atua como botão para mobile) -->
+      <!-- Card 1 -->
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-4 flex flex-col items-center overflow-visible min-h-[200px]">
         <div tabindex="0" role="button" aria-expanded="false"
-             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
+             class="js-toggle w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 shadow mb-2 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/Rede Parceira.jpeg" alt="Rede Parceira" class="w-full h-full object-cover">
         </div>
-
-        <p class="text-base font-semibold text-gray-800 mb-2">Rede Parceira</p>
-
-        <!-- OVERLAY: absoluto (fora do fluxo) - não altera a altura do grid -->
-        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
-                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+        <p class="text-base font-semibold text-gray-800 mb-1">Rede Parceira</p>
+        <div class="js-overlay absolute inset-0 p-4 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-2 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
                     transition-all duration-300 z-10">
           <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
             Nossa assessoria pedagógica acompanha e orienta na realização de projetos didáticos, acompanhamento das aprendizagens e gerenciamento dos recursos materiais.
@@ -85,14 +79,14 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-4 flex flex-col items-center overflow-visible min-h-[200px]">
         <div tabindex="0" role="button" aria-expanded="false"
-             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
+             class="js-toggle w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 shadow mb-2 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/APM.jpeg" alt="APM" class="w-full h-full object-cover">
         </div>
-        <p class="text-base font-semibold text-gray-800 mb-2">APM</p>
-        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
-                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+        <p class="text-base font-semibold text-gray-800 mb-1">APM</p>
+        <div class="js-overlay absolute inset-0 p-4 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-2 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
                     transition-all duration-300 z-10">
           <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
             A Associação de Pais e Mestres tem sua constituição bienal; auxiliamos na implementação, constituição e registro em cartório.
@@ -101,14 +95,14 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-4 flex flex-col items-center overflow-visible min-h-[200px]">
         <div tabindex="0" role="button" aria-expanded="false"
-             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
+             class="js-toggle w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 shadow mb-2 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/Pedagogico.jpeg" alt="Pedagógico" class="w-full h-full object-cover">
         </div>
-        <p class="text-base font-semibold text-gray-800 mb-2">Pedagógico</p>
-        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
-                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+        <p class="text-base font-semibold text-gray-800 mb-1">Pedagógico</p>
+        <div class="js-overlay absolute inset-0 p-4 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-2 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
                     transition-all duration-300 z-10">
           <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left">
             Atuamos nos eixos: gestão de recursos, gestão de pessoas e gestão pedagógica.
@@ -117,14 +111,14 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 flex flex-col items-center overflow-visible min-h-[220px]">
+      <div class="js-card relative group bg-white border border-gray-200 rounded-2xl shadow-sm p-4 flex flex-col items-center overflow-visible min-h-[200px]">
         <div tabindex="0" role="button" aria-expanded="false"
-             class="js-toggle w-24 h-24 rounded-full overflow-hidden border-4 border-red-600 shadow mb-3 transform transition-transform duration-300 group-hover:scale-110">
+             class="js-toggle w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 shadow mb-2 transform transition-transform duration-300 group-hover:scale-110">
           <img src="IMAGENS/SIGEP - Copia.jpeg" alt="SIGEP" class="w-full h-full object-cover">
         </div>
-        <p class="text-base font-semibold text-gray-800 mb-2">SIGEP</p>
-        <div class="js-overlay absolute inset-0 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
-                    transform translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
+        <p class="text-base font-semibold text-gray-800 mb-1">SIGEP</p>
+        <div class="js-overlay absolute inset-0 p-4 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg opacity-0 pointer-events-none
+                    transform translate-y-2 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0
                     transition-all duration-300 z-10">
           <div class="w-full h-full overflow-auto text-sm text-gray-700 text-left space-y-1">
             <p>Somos especialistas em prestação de contas, garantindo transparência e excelência 🤗</p>
@@ -135,135 +129,164 @@
         </div>
       </div>
 
-      <style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(6px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
-
     </div>
   </div>
 </section>
 
-
-
-
-
-
-
-
-      <!-- Blocos de clientes -->
-      <section class="bg-white py-16 px-6">
+<section class="bg-white py-12 px-4">
   <div class="container mx-auto">
     <div class="text-center mb-10">
-      <h2 class="text-2xl font-bold mb-10 logo-text">NOSSOS CLIENTES</h2>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-red-700 logo-text">NOSSOS CLIENTES</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
 
       <!-- Bloco 1 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
-        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
-        <div>
-          <h3 class="text-xl font-bold text-red-600 mb-2">APM - EMEF</h3>
-          <ul class="list-disc list-inside text-gray-800 space-y-1">
-            <li>APM EMEF Hélio Tavares, DR.</li>
-            <li>APM EMEF Madre Maria Imilda do Santíssimo Sacramento </li>
-            <li>APM EMEF Marisa Moretti Câmara </li>
-            <li>EMEF Lino de Matos, Sen </li>
-            <li>EMEF José Borges dos Santos Júnior, Rev. </li>
-            <li>EMEF José Borges Andrade </li>
-            <li>EMEF Henrique Pereira da Costa</li>
-            <li>EMEF Milton Pereira da Costa</li>
-          </ul>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl shadow-lg p-6 flex flex-col hover:shadow-xl transition-transform">
+        <div class="flex gap-4 items-start mb-4">
+          <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain rounded-full border-2 border-red-600 p-1">
+          <h3 class="text-xl md:text-2xl font-bold text-red-700">APM - EMEF</h3>
         </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm md:text-base overflow-y-auto flex-1 pr-2 max-h-64">
+          <li>APM EMEF Hélio Tavares, DR.</li>
+          <li>APM EMEF Madre Maria Imilda do Santíssimo Sacramento</li>
+          <li>APM EMEF Marisa Moretti Câmara</li>
+          <li>APM EMEF Lino de Mattos, Sen</li>
+          <li>APM EMEF José Borges dos Santos Júnior, Rev.</li>
+          <li>APM EMEF José Borges Andrade</li>
+          <li>APM EMEF Antônia e Artur Begbie</li>
+          <li>APM EMEF Milton Pereira da Costa</li>
+          <li>APM EMEF Henrique Felipe da Costa</li>
+          <li>APM EMEF Padre Nildo do Amaral Júnior</li>
+          <li>APM EMEF Laura da Conceição Pereira Quintaes</li>
+          <li>APM EMEF Doutor João Augusto Breves</li>
+          <li>APM EMEF Doutor Lauro Celidônio Gomes dos Reis</li>
+        </ul>
       </div>
 
       <!-- Bloco 2 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
-        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
-        <div>
-          <h3 class="text-xl font-bold text-red-600 mb-2">APM - EMEI</h3>
-          <ul class="list-disc list-inside text-gray-800 space-y-1">
-            <li>APM EMEI Epitácio Pessoa</li>
-            <li>APM  EMEI Maria da Luz Silva de Oliveira, Profª</li>
-            <li>APM EMEI Marisa Lopes Pinheiro</li>
-            <li>APM EMEI J. G de Araújo Jorge</li>
-          </ul>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl shadow-lg p-6 flex flex-col hover:shadow-xl transition-transform">
+        <div class="flex gap-4 items-start mb-4">
+          <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain rounded-full border-2 border-red-600 p-1">
+          <h3 class="text-xl md:text-2xl font-bold text-red-700">APM - EMEI</h3>
         </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm md:text-base overflow-y-auto flex-1 pr-2 max-h-64">
+          <li>APM EMEI Epitácio Pessoa</li>
+          <li>APM EMEI Maria da Luz Silva de Oliveira, Profª</li>
+          <li>APM EMEI Marisa Lopes Pinheiro</li>
+          <li>APM EMEI J. G de Araújo Jorge</li>
+          <li>APM EMEI Ovídio Decroly</li>
+          <li>APM EMEI Doutor Fausto Ribeiro da Silva</li>
+          <li>APM CEU EMEI Três Pontes</li>
+        </ul>
       </div>
 
       <!-- Bloco 3 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
-        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
-        <div>
-          <h3 class="text-xl font-bold text-red-600 mb-2">Rede Parceira</h3>
-          <ul class="list-disc list-inside text-gray-800 space-y-1">
-            <li>APM CEI Helena Pereira de Moraes</li>
-            <li>APM CEI Jardim Eva</li>
-            <li>APM CEI Chácara Dona Olívia</li>
-            <li>CEI Parque Santa Rita</li>
-            <li>CEI jardim São Vicente</li>
-            <li>CEI Jardim Macedônia</li>
-          </ul>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl shadow-lg p-6 flex flex-col hover:shadow-xl transition-transform">
+        <div class="flex gap-4 items-start mb-4">
+          <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain rounded-full border-2 border-red-600 p-1">
+          <h3 class="text-xl md:text-2xl font-bold text-red-700">APM - CEI</h3>
         </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm md:text-base overflow-y-auto flex-1 pr-2 max-h-64">
+          <li>APM CEI Helena Pereira de Moraes</li>
+          <li>APM CEI Jardim Eva</li>
+          <li>APM CEI Chácara Dona Olívia</li>
+          <li>APM CEI Parque Santa Rita</li>
+          <li>APM CEI Jardim São Vicente</li>
+          <li>APM CEI Jardim Macedônia</li>
+          <li>APM CEI Doralice Pereira de Souza Leonardo</li>
+          <li>APM CEI Rosa Sabag Addas</li>
+        </ul>
       </div>
 
       <!-- Bloco 4 -->
-      <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-md p-6 flex gap-4 items-start">
-        <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain">
-        <div>
-          <h3 class="text-xl font-bold text-red-600 mb-2">Consultoria Pedagógica</h3>
-          <ul class="list-disc list-inside text-gray-800 space-y-1">
-            <li>Planejamento estratégico</li>
-            <li>Formação continuada</li>
-            <li>Gestão de aprendizagem</li>
-          </ul>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl shadow-lg p-6 flex flex-col hover:shadow-xl transition-transform">
+        <div class="flex gap-4 items-start mb-4">
+          <img src="IMAGENS/PREFEITURA.png" alt="Brasão SP" class="w-16 h-16 object-contain rounded-full border-2 border-red-600 p-1">
+          <h3 class="text-xl md:text-2xl font-bold text-red-700">Rede Parceira</h3>
         </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm md:text-base overflow-y-auto flex-1 pr-2 max-h-64">
+          <li>Associação Brasileira Acolhedora da Paz</li>
+          <li>Associacao Beneficente Crescer</li>
+          <li>Associação Beneficente Educacional Corujinhas</li>
+          <li>CEI Lukinha</li>
+          <li>CEI Romano</li>
+          <li>CEI Santa Rita</li>
+          <li>CEI Ninho da Criança</li>
+          <li>CEI Pequenos Cristais</li>
+          <li>CEI Baby Maravilha I</li>
+          <li>CEI Baby Maravilha II</li>
+          <li>Instituto Educacional Cauá</li>
+          <li>CEI Luizia Aguiar</li>
+        </ul>
       </div>
 
+    </div>
+  </div>
+  
+</section>
+
+
+<!-- FAQ Interativo (fundo branco) -->
+<section class="bg-white py-12 px-4">
+  <div class="container mx-auto max-w-4xl">
+    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+      <button id="faq-toggle" 
+        class="w-full flex justify-between items-center text-left font-semibold text-gray-800 text-lg px-4 py-3 rounded-lg hover:bg-gray-50 transition duration-200 border border-red-600">
+        <span>Conheça nossos outros clientes</span>
+        <i id="faq-icon" class="fas fa-chevron-down text-red-600 transition-transform duration-300"></i>
+      </button>
+
+      <!-- Conteúdo expansível -->
+      <div id="faq-content" class="hidden mt-4 p-4 border border-red-600 rounded-lg bg-white">
+        <p class="mb-4 text-gray-700">
+          Realizamos formações para os Coordenadores pedagógicos das secretarias municipais Itaquaquecetuba e IlhaBela em parceria com a MULTIFÁCIL.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <img src="IMAGENS/ILHA BELA.jpg" alt="Formação 1" class="w-full h-40 object-contain rounded-lg border border-gray-300 bg-white p-2">
+          <img src="IMAGENS/secretaria Municipal.jpg" alt="Formação 2" class="w-full h-40 object-contain rounded-lg border border-gray-300 bg-white p-2">
+          <img src="IMAGENS/mult facil.jpg" alt="Formação 3" class="w-full h-40 object-contain rounded-lg border border-gray-300 bg-white p-2">
+      </div>
     </div>
   </div>
 </section>
 
 
-
-
 <!-- Rodapé -->
-  <footer class="w-full bg-gray-900 text-white py-12 px-6">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contato</h3>
-      <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
-      <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
-      <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
-      <p class="mb-2">📞 11 4102-7903</p>
-      <p class="mb-4">✉️ info@floraassessoria.com.br</p>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-bold mb-4">Sobre a Flora</h3>
-        <p class="mb-4 text-gray-300">
-          A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
-        </p>
-        <div class="flex gap-4">
-          <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
-            <i class="fab fa-instagram"></i>
-          <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-      </div>
+<footer class="w-full bg-gray-900 text-white py-10 px-4">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h3 class="text-xl font-bold mb-2">Contato</h3>
+      <p class="mb-1">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
+      <p class="mb-1">Vila Giordano, São Paulo - SP, 08020-360</p>
+      <p class="mb-1">📞 11 91482-5896 — WhatsApp</p>
+      <p class="mb-1">📞 11 4102-7903</p>
+      <p class="mb-2">✉️ floraplanejamento@gmail.com</p>
     </div>
 
-    <div class="mt-12 text-center text-sm text-gray-400">
-      &copy; 2025 Flora Assessoria. Todos os direitos reservados.
+    <div>
+      <h3 class="text-xl font-bold mb-2">Sobre a Flora</h3>
+      <p class="mb-4 text-gray-300">
+        A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
+      </p>
+      <div class="flex gap-3">
+        <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <div class="mt-8 text-center text-sm text-gray-400">
+    &copy; 2025 Flora Assessoria. Todos os direitos reservados.
+  </div>
+</footer>
 
 <script src="js/scripts.js"></script>
 <script>
@@ -272,31 +295,35 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-  const clientes = document.querySelectorAll(".cliente");
-
-  clientes.forEach((cliente) => {
-    cliente.addEventListener("mouseenter", () => {
-      // Oculta todos os conteúdos
-      clientes.forEach((c) => {
-        const conteudo = c.querySelector(".conteudo");
-        if (conteudo) conteudo.classList.add("hidden");
+    const clientes = document.querySelectorAll(".cliente");
+    clientes.forEach((cliente) => {
+      cliente.addEventListener("mouseenter", () => {
+        clientes.forEach((c) => {
+          const conteudo = c.querySelector(".conteudo");
+          if (conteudo) conteudo.classList.add("hidden");
+        });
+        const atual = cliente.querySelector(".conteudo");
+        if (atual) atual.classList.remove("hidden");
       });
 
-      // Exibe o conteúdo da bolha atual
-      const atual = cliente.querySelector(".conteudo");
-      if (atual) atual.classList.remove("hidden");
-    });
-
-    cliente.addEventListener("mouseleave", () => {
-      const atual = cliente.querySelector(".conteudo");
-      if (atual) atual.classList.add("hidden");
+      cliente.addEventListener("mouseleave", () => {
+        const atual = cliente.querySelector(".conteudo");
+        if (atual) atual.classList.add("hidden");
+      });
     });
   });
-});
 
+
+  const toggle = document.getElementById("faq-toggle");
+  const content = document.getElementById("faq-content");
+  const icon = document.getElementById("faq-icon");
+
+  toggle.addEventListener("click", () => {
+    content.classList.toggle("hidden");
+    icon.classList.toggle("rotate-180");
+  });
 
 </script>
-
 
 <!-- Avaliação -->
 <div class="fixed bottom-6 right-6 z-50">
@@ -306,6 +333,6 @@
     <span class="font-semibold">Avalie a Flora</span>
   </a>
 </div>
-  
+
 </body>
 </html>

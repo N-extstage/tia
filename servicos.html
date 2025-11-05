@@ -15,36 +15,36 @@
 </head>
 <body class="bg-white text-black">
 
-  <!-- Header/Navbar -->
-  <header class="bg-black px-6 py-4 shadow-md fixed top-0 w-full z-50">
-    <div class="container mx-auto flex items-center justify-between flex-wrap">
-      <!-- Logo -->
-      <div class="flex items-center gap-4">
-        <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.8] object-contain">
-      </div>
-
-      <!-- Menu desktop -->
-      <nav class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-red-600 font-bold">Início</a>
-        <a href="servicos.html" class="text-white hover:text-red-600 font-medium transition">Serviços</a>
-        <a href="sobre.html" class="text-white hover:text-red-600 font-medium transition">A Flora</a>
-        <a href="contato.html" class="text-white hover:text-red-600 font-medium transition">Contato</a>
-      </nav>
-
-      <!-- Botão mobile -->
-      <button onclick="toggleMenu()" class="md:hidden text-white">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-
-      <!-- Menu mobile -->
-      <nav id="mobile-menu" class="hidden w-full mt-4 md:hidden flex flex-col space-y-4">
-        <a href="index.html" class="text-red-600 font-bold">Início</a>
-        <a href="servicos.html" class="text-black hover:text-red-600 font-medium">Serviços</a>
-        <a href="sobre.html" class="text-black hover:text-red-600 font-medium">A Flora</a>
-        <a href="contato.html" class="text-black hover:text-red-600 font-medium">Contato</a>
-      </nav>
+  <!-- Navbar -->
+<header class="bg-black px-4 py-3 shadow-md fixed top-0 w-full z-50">
+  <div class="container mx-auto flex items-center justify-between flex-wrap">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="IMAGENS/LOGO.png" alt="Logo Flora" class="w-16 h-16 transform scale-[1.5] object-contain">
     </div>
-  </header>
+
+    <!-- Menu desktop -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="text-red-600 font-bold">Início</a>
+      <a href="servicos.html" class="text-white hover:text-red-600 font-medium transition">Serviços</a>
+      <a href="sobre.html" class="text-white hover:text-red-600 font-medium transition">A Flora</a>
+      <a href="contato.html" class="text-white hover:text-red-600 font-medium transition">Contato</a>
+    </nav>
+
+    <!-- Botão mobile -->
+    <button onclick="toggleMenu()" class="md:hidden text-white">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="hidden w-full mt-3 md:hidden flex flex-col space-y-3">
+      <a href="index.html" class="text-red-600 font-bold">Início</a>
+      <a href="servicos.html" class="text-black hover:text-red-600 font-medium">Serviços</a>
+      <a href="sobre.html" class="text-black hover:text-red-600 font-medium">A Flora</a>
+      <a href="contato.html" class="text-black hover:text-red-600 font-medium">Contato</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Seção com imagem e texto -->
   <section class="pt-32 px-4 bg-white">
@@ -175,39 +175,40 @@
 
 
 <!-- Rodapé -->
-  <footer class="w-full bg-gray-900 text-white py-12 px-6">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contato</h3>
-      <p class="mb-2">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
-      <p class="mb-2">Vila Giordano, São Paulo - SP, 08020-360</p>
-      <p class="mb-2">📞 11 91482-5896 — WhatsApp</p>
-      <p class="mb-2">📞 11 4102-7903</p>
-      <p class="mb-4">✉️ info@floraassessoria.com.br</p>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-bold mb-4">Sobre a Flora</h3>
-        <p class="mb-4 text-gray-300">
-          A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
-        </p>
-        <div class="flex gap-4">
-          <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
-            <i class="fab fa-instagram"></i>
-          <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-      </div>
+<footer class="w-full bg-gray-900 text-white py-10 px-4">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h3 class="text-xl font-bold mb-2">Contato</h3>
+      <p class="mb-1">📍 R. Décio Ângelo Chiuvitti, 33 - SALA 5</p>
+      <p class="mb-1">Vila Giordano, São Paulo - SP, 08020-360</p>
+      <p class="mb-1">📞 11 91482-5896 — WhatsApp</p>
+      <p class="mb-1">📞 11 4102-7903</p>
+      <p class="mb-2">✉️ floraplanejamento@gmail.com</p>
     </div>
 
-    <div class="mt-12 text-center text-sm text-gray-400">
-      &copy; 2025 Flora Assessoria. Todos os direitos reservados.
+    <div>
+      <h3 class="text-xl font-bold mb-2">Sobre a Flora</h3>
+      <p class="mb-4 text-gray-300">
+        A Flora Assessoria é especializada em transformar ideias em estratégias de sucesso. Com foco em inovação, oferecemos soluções personalizadas para cada cliente.
+      </p>
+      <div class="flex gap-3">
+        <a href="https://www.facebook.com/people/Flora-Planejamento/100092316592225/?mibextid=wwXIfr&rdid=4DdLTxwxM1aXpEaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AstAD7ra3%2F%3Fmibextid%3DwwXIfr" target="_blank" class="text-white hover:text-blue-600 text-xl">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/floraplanejamento/#" target="_blank" class="text-white hover:text-orange-600 text-xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511914825896" target="_blank" class="text-white hover:text-green-500 text-xl">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <div class="mt-8 text-center text-sm text-gray-400">
+    &copy; 2025 Flora Assessoria. Todos os direitos reservados.
+  </div>
+</footer>
 
   <!-- Avaliação -->
 <div class="fixed bottom-6 right-6 z-50">
